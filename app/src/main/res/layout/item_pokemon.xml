@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/teal_200">
+
+            <ImageView
+                android:id="@+id/imgPoke"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/pkwho"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textPokeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NamePokemon"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:textStyle="bold|italic"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/purple_500"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
